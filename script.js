@@ -90,7 +90,7 @@
 // ______________________
 // DOM getElemtntById
 
-// const test = document.getElementById("item");
+// const test =  document.getElementById("item");
 // console.log(test);
 
 // const test2 = document.getElementsByTagName("li");
@@ -112,14 +112,26 @@
 // _________________________
 // zadanie z pobierania elementów
 
-const head = document.querySelector("h1");
-console.log(head);
+const test1 = document.getElementsByTagName("ul");
+console.log(test1);
 
-const parag = document.querySelectorAll("p");
-console.log(parag);
+const test2 = document.getElementById("item");
+console.log(test2);
 
-const div_class = document.querySelector("div.test");
-console.log(div_class);
+const test3 = document.getElementsByClassName("liClass");
+console.log(test3);
 
-const id_test = div_class.querySelector("#test");
-console.log(id_test);
+const test4 = document.getElementsByTagName("li");
+console.log(test4);
+
+// const head = document.querySelector("h1");
+// console.log(head);
+
+// const parag = document.querySelectorAll("p");
+// console.log(parag);
+
+// const div_class = document.querySelector("div.test");
+// console.log(div_class);
+
+// const id_test = div_class.querySelector("#test");
+// console.log(id_test);
