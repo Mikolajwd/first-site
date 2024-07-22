@@ -112,17 +112,17 @@
 // _________________________
 // zadanie z pobierania elementów
 
-const test1 = document.getElementsByTagName("ul");
-console.log(test1);
+// const test1 = document.getElementsByTagName("ul");
+// console.log(test1);
 
-const test2 = document.getElementById("item");
-console.log(test2);
+// const test2 = document.getElementById("item");
+// console.log(test2);
 
-const test3 = document.getElementsByClassName("liClass");
-console.log(test3);
+// const test3 = document.getElementsByClassName("liClass");
+// console.log(test3);
 
-const test4 = document.getElementsByTagName("li");
-console.log(test4);
+// const test4 = document.getElementsByTagName("li");
+// console.log(test4);
 
 // const head = document.querySelector("h1");
 // console.log(head);
@@ -135,3 +135,30 @@ console.log(test4);
 
 // const id_test = div_class.querySelector("#test");
 // console.log(id_test);
+// ___________________
+// apend child
+
+// const ulList = document.createElement("ul");
+// const liItem = document.createElement("li");
+// liItem.textContent = "hejo";
+
+// document.body.appendChild(ulList);
+// ulList.appendChild(liItem);
+
+// const div_1 = document.querySelector("div.div1");
+// console.log(div_1);
+
+// const add_P = document.createElement("add_P");
+// add_P.textContent = " & jestem pharagraf";
+// div_1.appendChild(add_P);
+
+const div = document.querySelector("div");
+const p = document.createElement("p");
+const h2 = document.createElement("h2");
+p.textContent = "Paragraph";
+h2.textContent = "to jest nagłówek H2";
+
+div.appendChild(p);
+div.appendChild(h2);
+
+console.log(document.body);
