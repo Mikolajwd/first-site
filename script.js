@@ -152,13 +152,30 @@
 // add_P.textContent = " & jestem pharagraf";
 // div_1.appendChild(add_P);
 
-const div = document.querySelector("div");
-const p = document.createElement("p");
-const h2 = document.createElement("h2");
-p.textContent = "Paragraph";
-h2.textContent = "to jest nagłówek H2";
+// const div = document.querySelector("div");
+// const p = document.createElement("p");
+// const h2 = document.createElement("h2");
+// p.textContent = "Paragraph";
+// h2.textContent = "to jest nagłówek H2";
 
-div.appendChild(p);
-div.appendChild(h2);
+// div.appendChild(p);
+// div.appendChild(h2);
 
-console.log(document.body);
+// console.log(document.body);
+// ____________________________
+// inerHTML, OuterHTML,
+
+// const btn = document.querySelector("button");
+
+// btn.outerHTML = "<p>hejo</p>";
+// // console.log(btn);
+
+// // btn.innerHTML = "";
+// console.log(btn);
+// --------------
+
+const innerT = document.querySelector(".inner-text");
+const textC = document.querySelector(".text-content");
+
+console.log(innerT.innerText);
+console.log(textC.textContent);
