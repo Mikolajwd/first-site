@@ -1,0 +1,30 @@
+.circle_lime {
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: lime;
+}
+.circle_blue {
+	position: relative;
+	transform: translateX(50%);
+	transform: translateY(50%);
+	left: 25%;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: blue;
+}
+.circle_gold {
+	position: relative;
+	transform: translateX(-25px);
+	transform: translateY(-25px);
+	left: 75px;
+	/* top: 75px; */
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: gold;
+}

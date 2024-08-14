@@ -189,43 +189,50 @@
 
 // div_1.removeChild(h1_01);
 // _______________
-addEventListener;
+// addEventListener;
 
-const btn1 = document.querySelector(".btn-1");
-const btn2 = document.querySelector(".btn-2");
-const btn3 = document.querySelector(".btn-3");
+// const btn1 = document.querySelector(".btn-1");
+// const btn2 = document.querySelector(".btn-2");
+// const btn3 = document.querySelector(".btn-3");
 
-btn1.addEventListener("click", function () {
-	console.log("kliknięto mnie");
-});
+// btn1.addEventListener("click", function () {
+// 	console.log("kliknięto mnie");
+// });
 
-btn2.addEventListener("mouseover", () => {
-	console.log("najechano na mnie");
-});
+// btn2.addEventListener("mouseover", () => {
+// 	console.log("najechano na mnie");
+// });
 
-const n_click = () => {
-	console.log("clicknięno duble click");
-};
+// const n_click = () => {
+// 	console.log("clicknięno duble click");
+// };
 
-btn3.addEventListener("dblclick", n_click);
+// btn3.addEventListener("dblclick", n_click);
 
-const btns = document.querySelectorAll("button");
-console.log(btns);
+// const btns = document.querySelectorAll("button");
+// console.log(btns);
 
-const smile = () => {
-	console.log("=)))");
-};
+// const smile = () => {
+// 	console.log("=)))");
+// };
 
-btns.forEach(btn => btn.addEventListener("click", smile));
+// btns.forEach(btn => btn.addEventListener("click", smile));
 
 // ____________________
 // e target
 
-// const btn_1 = document.querySelector("button");
+// const btn = document.querySelector("button");
 
 // const test = e => {
-// 	// console.log(e.target);
+// 	console.log(e);
 // 	console.log(e.target.classList);
+// 	console.log(e.target.offsetTop);
 // };
 
-// btn_1.addEventListener("click", test);
+// btn.addEventListener("click", test);
+
+
+// ________________________
+// Bubbling & Capturing
+
+
