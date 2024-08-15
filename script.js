@@ -235,4 +235,43 @@
 // ________________________
 // Bubbling & Capturing
 
+// const lime = document.querySelector('.circle_lime')
+// const blue = document.querySelector('.circle_blue')
+// const gold = document.querySelector('.circle_gold')
 
+// const infoLime = () => {
+//     console.log('%clime', 'color: lime; text-transform: uppercase' );
+// }
+// const infoBlue = () => {
+//     console.log('%cblue', 'color: blue; text-transform: uppercase' );
+// }
+// const infoGold = () => {
+//     console.log('%cgold', 'color: gold; text-transform: uppercase' );
+// }
+
+// lime.addEventListener('click', infoLime, {capture: false})
+// lime.addEventListener('click', infoBlue)
+// lime.addEventListener('click', infoGold)
+
+// _____________________________
+// Stop Propagation
+
+const lime = document.querySelector('.circle_lime')
+const blue = document.querySelector('.circle_blue')
+const gold = document.querySelector('.circle_gold')
+
+const infoLime = () => {
+    // e.stopPropagation()
+    console.log('%clime', 'color: lime; text-transform: uppercase' );
+}
+const infoBlue = () => {
+    console.log('%cten kod nie musiał się wykonywać', 'color: blue; text-transform: uppercase' );
+}
+const infoGold = (e) => {
+    e.stopPropagation()
+    console.log('%cwykonuje jakiś kod', 'color: gold; text-transform: uppercase' );
+}
+
+// lime.addEventListener('click', infoLime, {capture: false})
+lime.addEventListener('click', infoBlue)
+lime.addEventListener('click', infoGold)
