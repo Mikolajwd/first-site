@@ -231,7 +231,6 @@
 
 // btn.addEventListener("click", test);
 
-
 // ________________________
 // Bubbling & Capturing
 
@@ -256,22 +255,75 @@
 // _____________________________
 // Stop Propagation
 
-const lime = document.querySelector('.circle_lime')
-const blue = document.querySelector('.circle_blue')
-const gold = document.querySelector('.circle_gold')
+// const lime = document.querySelector(".circle_lime");
+// const blue = document.querySelector(".circle_blue");
+// const gold = document.querySelector(".circle_gold");
 
-const infoLime = () => {
-    // e.stopPropagation()
-    console.log('%clime', 'color: lime; text-transform: uppercase' );
-}
-const infoBlue = () => {
-    console.log('%cten kod nie musiał się wykonywać', 'color: blue; text-transform: uppercase' );
-}
-const infoGold = (e) => {
-    e.stopPropagation()
-    console.log('%cwykonuje jakiś kod', 'color: gold; text-transform: uppercase' );
-}
+// const infoLime = () => {
+// 	console.log("%clime", "color: lime; text-transform: uppercase");
+// };
+// const infoBlue = () => {
+// 	console.log(
+// 		"%cten kod nie musiał się wykonywać",
+// 		"color: blue; text-transform: uppercase"
+// 	);
+// };
+// const infoGold = e => {
+// 	e.stopPropagation();
+// 	console.log("%cwykonuje jakiś kod", "color: gold; text-transform: uppercase");
+// };
 
-// lime.addEventListener('click', infoLime, {capture: false})
-lime.addEventListener('click', infoBlue)
-lime.addEventListener('click', infoGold)
+// lime.addEventListener("click", infoBlue);
+// lime.addEventListener("click", infoGold);
+
+// ________________________
+// Delegacja zdarzeń
+
+// const allCircles = document.querySelectorAll(".circle");
+// const gold = document.querySelector(".gold");
+// const lime = document.querySelector(".lime");
+
+// allCircles.forEach(circle =>
+// 	circle.addEventListener("click", () => console.log(circle))
+// );
+
+// const new_Circle = document.createElement("div");
+// new_Circle.classList.add('circle', 'purple')
+// gold.append(new_Circle);
+
+// dynamicznie dodane elementy, widoczne tylko w nodeliscie, ponieważ nie użyliśmy getElementByTagName, wówczas tego nie użyliśmy poniważ w tedy bym nie mieli możliwości użyć forEach przy użyciu tej metoddy
+
+// ____________________
+// Delegacja zdarzeń p2
+
+// const allCircles = document.querySelectorAll(".circle");
+// const gold = document.querySelector(".gold");
+// const lime = document.querySelector(".lime");
+
+// // allCircles.forEach(circle =>
+// // 	circle.addEventListener("click", () => console.log(circle))
+// // );
+
+// const new_Circle = document.createElement("div");
+// new_Circle.classList.add("circle", "purple");
+// gold.append(new_Circle);
+
+// lime.addEventListener("click", e => {
+// 	// if (e.target.matches(".circle_2")) {
+// 	if (e.target.classList.contains("circle_2")) {
+// 		console.log(e.target);
+// 	}
+// });
+// __________________
+// dodawanie i usuwanie class
+
+const addBtn = document.querySelector(".add");
+const removeBtn = document.querySelector(".remove");
+const toggleBtn = document.querySelector(".toggle");
+const text = document.querySelector(".test");
+
+const addClass = () => {
+	text.classList.add("test");
+};
+
+addBtn.addEventListener("click", addClass);
