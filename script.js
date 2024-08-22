@@ -429,4 +429,37 @@
 // setTimeout(test, 2000)
 
 // ____________________
-// Strict mode
+// alert, confirm, prompt
+
+// alert("uwaga zagrożenie dla twoich oczy");
+
+// confirm("czy potwierdzisz?");
+
+// const name = prompt("wpiszesz swoje imię?");
+// alert(`witaj ${name}`);
+
+// _____________________
+// Obiekt math
+
+// console.log(Math.PI);
+
+// const number = Math.random() * 10;
+
+// console.log(Math.floor(number));
+// _____________________
+// atrybuty
+
+const h2 = document.querySelector("h2");
+console.log(h2);
+
+h2.setAttribute("href", "#");
+h2.setAttribute("target", "_blank");
+// dodaje \ ustawia nowe atrybuty
+
+console.log(h2.getAttribute("style"));
+// pobiera wartość która jest przypisana do dannego atrybutu
+
+console.log(h2.hasAttribute("style"));
+// sprawdza czy mamy podany atrybut, zwraca wartość boolean
+
+h2.removeAttribute("style");
