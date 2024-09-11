@@ -449,17 +449,22 @@
 // _____________________
 // atrybuty
 
-const h2 = document.querySelector("h2");
-console.log(h2);
+// const h2 = document.querySelector("h2");
+// console.log(h2);
 
-h2.setAttribute("href", "#");
-h2.setAttribute("target", "_blank");
-// dodaje \ ustawia nowe atrybuty
+// h2.setAttribute("href", "#");
+// h2.setAttribute("target", "_blank");
+// // dodaje \ ustawia nowe atrybuty
 
-console.log(h2.getAttribute("style"));
-// pobiera wartość która jest przypisana do dannego atrybutu
+// console.log(h2.getAttribute("style"));
+// // pobiera wartość która jest przypisana do dannego atrybutu
 
-console.log(h2.hasAttribute("style"));
-// sprawdza czy mamy podany atrybut, zwraca wartość boolean
+// console.log(h2.hasAttribute("style"));
+// // sprawdza czy mamy podany atrybut, zwraca wartość boolean
 
-h2.removeAttribute("style");
+// h2.removeAttribute("style");
+
+// _______________________--
+// data atrybuty
+
+
