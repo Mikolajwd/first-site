@@ -449,22 +449,32 @@
 // _____________________
 // atrybuty
 
-// const h2 = document.querySelector("h2");
-// console.log(h2);
+// const link = document.querySelector('a')
+// const img = document.querySelector('img')
+// const p = document.querySelector('p')
 
-// h2.setAttribute("href", "#");
-// h2.setAttribute("target", "_blank");
-// // dodaje \ ustawia nowe atrybuty
+// link.setAttribute('href', '#')
+// link.setAttribute('target', '_blank')
+// //  dodaje / ustawia nowy atrybut i przepisuje do niego wartość
 
-// console.log(h2.getAttribute("style"));
-// // pobiera wartość która jest przypisana do dannego atrybutu
 
-// console.log(h2.hasAttribute("style"));
-// // sprawdza czy mamy podany atrybut, zwraca wartość boolean
+// console.log(img.getAttribute('alt'));
+// // pobira wartość, która jest przepisana do danego atrybutu
 
-// h2.removeAttribute("style");
+// console.log(p.hasAttribute('style'));
+// // sprawdza czy mamy jakiś atrybut
+
+// p.removeAttribute('style')
+// // usuwa wskazany atrybut z DOM
 
 // _______________________--
 // data atrybuty
 
+const div = document.querySelector('.div')
+console.log(div);
 
+ const divAt = document.querySelector('[data-number="23"]')
+console.log(divAt);
+
+console.log(divAt.dataset);
+console.log(divAt.dataset.moreInfo);
