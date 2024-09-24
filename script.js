@@ -468,13 +468,43 @@
 // // usuwa wskazany atrybut z DOM
 
 // _______________________--
-// data atrybuty
+// // data atrybuty
 
-const div = document.querySelector('.div')
-console.log(div);
+// const div = document.querySelector('.div')
+// console.log(div);
 
- const divAt = document.querySelector('[data-number="23"]')
-console.log(divAt);
+//  const divAt = document.querySelector('[data-number="23"]')
+// console.log(divAt);
 
-console.log(divAt.dataset);
-console.log(divAt.dataset.moreInfo);
+// console.log(divAt.dataset);
+// console.log(divAt.dataset.moreInfo);
+
+// _______________________--
+// zadanie nr1
+
+// const img = document.querySelector('img')
+// img.setAttribute('src', 'https://unsplash.it/600/400')
+// img.setAttribute('alt', 'losowy obrazek z interneu')
+
+
+// const coKolwiek = () => {
+//     console.log("hej jestem function");
+//     }
+
+//     setTimeout(coKolwiek, 5000)
+
+// _____________________-
+// zadadnie nr2.
+const liItems = document.querySelectorAll('li')
+let number = 1
+
+for(const liItem of liItems) {
+    liItem.textContent = number
+    liItem.dataset.id = number
+    number++
+}
+
+const thirdLi = document.querySelector('[data-id="3"]')
+console.log(thirdLi);
+console.log(thirdLi.closest('.wrapper'));
+
