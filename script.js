@@ -1,4 +1,4 @@
-// console.log("hi mordo");
+console.log("..................it's me, your first site..............");
 
 // const num = [1, 2, 4, 6];
 
@@ -455,25 +455,25 @@
 
 // link.setAttribute('href', '#')
 // link.setAttribute('target', '_blank')
-// //  dodaje / ustawia nowy atrybut i przepisuje do niego wartość
+// dodaje / ustawia nowy atrybut i przepisuje do niego wartość
 
 
 // console.log(img.getAttribute('alt'));
-// // pobira wartość, która jest przepisana do danego atrybutu
+// pobira wartość, która jest przepisana do danego atrybutu
 
 // console.log(p.hasAttribute('style'));
-// // sprawdza czy mamy jakiś atrybut
+// sprawdza czy mamy jakiś atrybut
 
 // p.removeAttribute('style')
-// // usuwa wskazany atrybut z DOM
+// usuwa wskazany atrybut z DOM
 
 // _______________________--
-// // data atrybuty
+// data atrybuty
 
 // const div = document.querySelector('.div')
 // console.log(div);
 
-//  const divAt = document.querySelector('[data-number="23"]')
+// const divAt = document.querySelector('[data-number="23"]')
 // console.log(divAt);
 
 // console.log(divAt.dataset);
@@ -489,22 +489,87 @@
 
 // const coKolwiek = () => {
 //     console.log("hej jestem function");
+// //     }
+
+// //     setTimeout(coKolwiek, 5000)
+
+// // _____________________-
+// // zadadnie nr2.
+// const liItems = document.querySelectorAll('li')
+// let number = 1
+
+// for(const liItem of liItems) {
+//     liItem.textContent = number
+//     liItem.dataset.id = number
+//     number++
+// }
+
+// const thirdLi = document.querySelector('[data-id="3"]')
+// console.log(thirdLi);
+// console.log(thirdLi.closest('.wrapper'));
+
+// data atrybuty powtórka z rozrywki
+
+// const div = document.querySelector('div')
+// console.log(div);
+
+
+// _________________________________
+// OBJEKTY
+
+// const myObject = {
+//     key: value,
+//     key: value,
+//     key: value
+// }
+
+
+// dodanie objekta w objekcie___________
+
+// const newUser = {
+//     name: 'Lisa',
+//     age: 23,
+//     car: {
+//         brand: 'audi',
+//         model: 'a3',
+//         color: 'czarny',
+//         sound: () => {
+//             console.log('wrum, wrum');
+//         }
 //     }
+// }
 
-//     setTimeout(coKolwiek, 5000)
+// console.log(newUser.name);
+// console.log(newUser.age);
 
-// _____________________-
-// zadadnie nr2.
-const liItems = document.querySelectorAll('li')
-let number = 1
+// console.log(`${newUser.name} jeździ samochodem marki ${newUser.car.brand}, kolor ${newUser.car.color}, która robie`);
 
-for(const liItem of liItems) {
-    liItem.textContent = number
-    liItem.dataset.id = number
-    number++
+// console.log(newUser.car.sound())
+
+const car = {
+    marka: 'BMW',
+    model: '3 seria', 
+    rok: 1998,
+    kolor: 'czerwohny',
+    silnik: {
+        model: 'n47',
+        wtrysk: 'pośredni',
+        zawory: 16,
+        tloki: 4,
+        rozrad: 'lancuch',
+        egr: true,
+        dpf: false,
+        kat: {
+            pogrz: true,
+            poj: '200-300',
+            przelot: true,
+            podwojny: false
+        }
 }
 
-const thirdLi = document.querySelector('[data-id="3"]')
-console.log(thirdLi);
-console.log(thirdLi.closest('.wrapper'));
+}
 
+
+car.silnik.rokProd = 1995
+car.silnik.kat.iloscTi = '1348gr'
+console.log(car);
