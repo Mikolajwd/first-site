@@ -572,4 +572,6 @@ const car = {
 
 car.silnik.rokProd = 1995
 car.silnik.kat.iloscTi = '1348gr'
+car.silnik.kat['kat-masa-wlasna'] = '2500 gr'
+car.silnik.kat['kat-prepust'] = '200 kg/min'
 console.log(car);
