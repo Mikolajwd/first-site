@@ -546,32 +546,43 @@ console.log("..................it's me, your first site..............");
 
 // console.log(newUser.car.sound())
 
-const car = {
-    marka: 'BMW',
-    model: '3 seria', 
-    rok: 1998,
-    kolor: 'czerwohny',
-    silnik: {
-        model: 'n47',
-        wtrysk: 'pośredni',
-        zawory: 16,
-        tloki: 4,
-        rozrad: 'lancuch',
-        egr: true,
-        dpf: false,
-        kat: {
-            pogrz: true,
-            poj: '200-300',
-            przelot: true,
-            podwojny: false
-        }
+// const car = {
+//     marka: 'BMW',
+//     model: '3 seria', 
+//     rok: 1998,
+//     kolor: 'czerwohny',
+//     silnik: {
+//         model: 'n47',
+//         wtrysk: 'pośredni',
+//         zawory: 16,
+//         tloki: 4,
+//         rozrad: 'lancuch',
+//         egr: true,
+//         dpf: false,
+//         kat: {
+//             pogrz: true,
+//             poj: '200-300',
+//             przelot: true,
+//             podwojny: false
+//         }
+// }
+
+// }
+
+
+// car.silnik.rokProd = 1995
+// car.silnik.kat.iloscTi = '1348gr'
+// car.silnik.kat['kat-masa-wlasna'] = '2500 gr'
+// car.silnik.kat['kat-prepust'] = '200 kg/min'
+// console.log(car);
+
+// THIS
+// co to jest i po co
+
+const user = {
+    name: 'Rafał',
+    log: function(){
+        console.log(`to jest moja odpalona funkcja, drogi ${user.name}`);
+    }
 }
-
-}
-
-
-car.silnik.rokProd = 1995
-car.silnik.kat.iloscTi = '1348gr'
-car.silnik.kat['kat-masa-wlasna'] = '2500 gr'
-car.silnik.kat['kat-prepust'] = '200 kg/min'
-console.log(car);
+user.log()
