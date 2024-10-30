@@ -579,10 +579,34 @@ console.log("..................it's me, your first site..............");
 // THIS
 // co to jest i po co
 
-const user = {
-    name: 'Rafał',
-    log: function(){
-        console.log(`to jest moja odpalona funkcja, drogi ${user.name}`);
-    }
+// const user = {
+//     name: 'niko',
+//     age: 23,
+//     address: {
+//         city: 'Kraków',
+//         'zip-code': '00-211',
+//         showCity: function() {
+//             console.log(this.city);
+//         }
+//     }
+
+// }
+
+// // console.log(user.name);
+// user.address.showCity()
+//  ____________________
+// next level this
+let timeCook = '23 min';
+
+function Food(name, prepare) {
+    const prepare = 40
+    this.name = name
+    this.prepare = prepare
 }
-user.log()
+
+
+const meal = new Food('schabowy')
+const meal2 = new Food('pepsi')
+const time = new Food ('burak', '12')
+
+console.log(meal, meal2, time);
