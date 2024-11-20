@@ -575,7 +575,7 @@ console.log("..................it's me, your first site..............");
 // car.silnik.kat['kat-masa-wlasna'] = '2500 gr'
 // car.silnik.kat['kat-prepust'] = '200 kg/min'
 // console.log(car);
-
+// ___________________
 // THIS
 // co to jest i po co
 
@@ -596,17 +596,56 @@ console.log("..................it's me, your first site..............");
 // user.address.showCity()
 //  ____________________
 // next level this
-let timeCook = '23 min';
 
-function Food(name, prepare) {
-    const prepare = 40
-    this.name = name
-    this.prepare = prepare
+// const test = {
+//     name: "niko",
+//     age: 23,
+//     showInfo(){
+//         console.log('next = > show my info');
+//         console.log(this.name);
+//         console.log(this.age);
+//     }
+// }
+
+// test.showInfo()
+
+// _____________
+// this cz.2
+
+// function Food(name) {
+//     this.name = name
+// }
+
+// const meal = new Food('schabowy')
+// const meal2 = new Food('pepsi')
+
+// console.log(meal, meal2);
+// _________________________
+// call & apply
+
+const movie = {
+    title: 'Avengers',
+    
 }
+function showMovie(price, cinema) {
+    console.log(`Film ${this.title}, cena: ${price}, kino: ${cinema}.`);
+        
+}
+showMovie(30, 'superKINO')
+
+// funkcja.call(objekt, argumenty)
+showMovie.call(movie, 35, "superKINO2")
+
+// funkcja.apply(objekt, tablica)
+showMovie.apply(movie, [40,'superKINO3'])
 
 
-const meal = new Food('schabowy')
-const meal2 = new Food('pepsi')
-const time = new Food ('burak', '12')
+const movieData = [45,'superKINO4']
+showMovie.apply(movie, movieData )
 
-console.log(meal, meal2, time);
+
+
+
+
+
+
