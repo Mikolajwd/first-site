@@ -623,29 +623,64 @@ console.log("..................it's me, your first site..............");
 // _________________________
 // call & apply
 
-const movie = {
-    title: 'Avengers',
+// const movie = {
+//     title: 'Avengers',
     
-}
-function showMovie(price, cinema) {
-    console.log(`Film ${this.title}, cena: ${price}, kino: ${cinema}.`);
+// }
+// function showMovie(price, cinema) {
+//     console.log(`Film ${this.title}, cena: ${price}, kino: ${cinema}.`);
         
+// }
+// showMovie(30, 'superKINO')
+
+// // funkcja.call(objekt, argumenty)
+// showMovie.call(movie, 35, "superKINO2")
+
+// // funkcja.apply(objekt, tablica)
+// showMovie.apply(movie, [40,'superKINO3'])
+
+
+// const movieData = [45,'superKINO4']
+// showMovie.apply(movie, movieData )
+// __________________________
+// KLASY
+
+function Person(name, age) {
+    this.name = name
+    this.age = age
 }
-showMovie(30, 'superKINO')
 
-// funkcja.call(objekt, argumenty)
-showMovie.call(movie, 35, "superKINO2")
-
-// funkcja.apply(objekt, tablica)
-showMovie.apply(movie, [40,'superKINO3'])
-
-
-const movieData = [45,'superKINO4']
-showMovie.apply(movie, movieData )
+Person.prototype.sayHi = function (){
+    console.log(`cześć, jestem ${this.name}`);
+}
+        Person.prototype.showAge = function () {
+            console.log(`${this.name} dzisiaj ma ${this.age} lat.`);
+        }
 
 
+        const person1 = new Person ('Niko', 23)
+        person1.sayHi()
+        person1.showAge()
 
 
+// ===============================
+// Nowy zapis takiego kodu
 
+ 
+class Person2 {  
+    constructor(name,age) {
+        this.name
+        this.age
+    }
+    
+    sayHi(){
+        console.log(`Hej jestem ${this.name}`);
+    }
+    
+    showAge() {
+        console.log(`${this.name}, ma dzisiaj ${this.age}`);
+    }
+}
 
-
+const person2 = new Person2('Nata', 22)
+console.log(person2);
