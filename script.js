@@ -527,56 +527,56 @@ console.log("..................it's me, your first site..............");
 
 // dodanie objekta w objekcie___________
 
-const newUser = {
-    name: 'Lisa',
-    age: 23,
-    car: {
-        brand: 'audi',
-        model: 'a3',
-        color: 'czarny',
-        sound: () => {
-            console.log('wrum, wrum');
-        }
-    }
-}
+// const newUser = {
+//     name: 'Lisa',
+//     age: 23,
+//     car: {
+//         brand: 'audi',
+//         model: 'a3',
+//         color: 'czarny',
+//         sound: () => {
+//             console.log('wrum, wrum');
+//         }
+//     }
+// }
 
-console.log(newUser.name);
-console.log(newUser.age);
+// console.log(newUser.name);
+// console.log(newUser.age);
 
-console.log(`${newUser.name} jeździ samochodem marki ${newUser.car.brand}, kolor ${newUser.car.color}, która robie`);
+// console.log(`${newUser.name} jeździ samochodem marki ${newUser.car.brand}, kolor ${newUser.car.color}, która robie`);
 
-console.log(newUser.car.sound())
+// console.log(newUser.car.sound())
 
-const car = {
-    marka: 'BMW',
-    model: '3 seria', 
-    rok: 1998,
-    kolor: 'czerwohny',
-    silnik: {
-        model: 'n47',
-        wtrysk: 'pośredni',
-        zawory: 16,
-        tloki: 4,
-        rozrad: 'lancuch',
-        egr: true,
-        dpf: false,
-        kat: {
-            pogrz: true,
-            poj: '200-300',
-            przelot: true,
-            podwojny: false
-        }
-}
+// const car = {
+//     marka: 'BMW',
+//     model: '3 seria', 
+//     rok: 1998,
+//     kolor: 'czerwohny',
+//     silnik: {
+//         model: 'n47',
+//         wtrysk: 'pośredni',
+//         zawory: 16,
+//         tloki: 4,
+//         rozrad: 'lancuch',
+//         egr: true,
+//         dpf: false,
+//         kat: {
+//             pogrz: true,
+//             poj: '200-300',
+//             przelot: true,
+//             podwojny: false
+//         }
+// }
 
-}
+// }
 
-car.silnik.rokProd = 1995
-car.silnik.kat.iloscTi = '1348gr'
-car.silnik.kat['kat-masa-wlasna'] = '2500 gr'
-car.silnik.kat['kat-prepust'] = '200 kg/min'
+// car.silnik.rokProd = 1995
+// car.silnik.kat.iloscTi = '1348gr'
+// car.silnik.kat['kat-masa-wlasna'] = '2500 gr'
+// car.silnik.kat['kat-prepust'] = '200 kg/min'
 
 
-console.log(car);
+// console.log(car);
 // _________________
 // Powtórka OOP
 // const newUser = {
@@ -632,6 +632,32 @@ console.log(car);
 // }
 
 // test.showInfo()
+// 
+// 
+
+// powtóka z rozrywki z this
+// 
+
+// const person = {
+//     name: "Wiktor",
+//     'prefer-car': "Audi",
+//     settings: {
+//         engine: "2.0 FSI",
+//         value: 20,
+//         showSettings: function() {
+//             console.log(this.engine);
+//         }
+//     },
+//     show: function showSettings(){
+//         console.log(this['prefer-car']);
+//     }
+// }
+// person.settings.showSettings()
+// person.show()
+
+// 
+// 
+// 
 
 // _____________
 // this cz.2
@@ -645,6 +671,35 @@ console.log(car);
 
 // console.log(meal, meal2);
 // _________________________
+// 
+// // powtóka z rozrywki z this
+// let dog
+
+// function Animal(name){
+//     this.name = name
+// }
+
+
+// const cat = new Animal ('cat')
+
+// console.log([dog]);
+
+// const chooseName = () => {
+//     let dog = new Animal ('[PIES]')
+//     console.log(dog);
+// }
+// console.log([cat]);
+// chooseName()
+// const newAnimal = new Animal ('elpahant')
+// console.log(newAnimal);
+
+
+//
+
+// 
+// 
+// 
+// _______________________
 // call & apply
 
 // const movie = {
