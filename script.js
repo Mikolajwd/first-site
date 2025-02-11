@@ -515,7 +515,8 @@ console.log("..................it's me, your first site..............");
 
 
 // _________________________________
-// OBJEKTY
+// OBJEKTY OOP
+
 
 // const myObject = {
 //     key: value,
@@ -526,56 +527,79 @@ console.log("..................it's me, your first site..............");
 
 // dodanie objekta w objekcie___________
 
-// const newUser = {
-//     name: 'Lisa',
-//     age: 23,
-//     car: {
-//         brand: 'audi',
-//         model: 'a3',
-//         color: 'czarny',
-//         sound: () => {
-//             console.log('wrum, wrum');
-//         }
-//     }
-// }
+const newUser = {
+    name: 'Lisa',
+    age: 23,
+    car: {
+        brand: 'audi',
+        model: 'a3',
+        color: 'czarny',
+        sound: () => {
+            console.log('wrum, wrum');
+        }
+    }
+}
 
+console.log(newUser.name);
+console.log(newUser.age);
+
+console.log(`${newUser.name} jeździ samochodem marki ${newUser.car.brand}, kolor ${newUser.car.color}, która robie`);
+
+console.log(newUser.car.sound())
+
+const car = {
+    marka: 'BMW',
+    model: '3 seria', 
+    rok: 1998,
+    kolor: 'czerwohny',
+    silnik: {
+        model: 'n47',
+        wtrysk: 'pośredni',
+        zawory: 16,
+        tloki: 4,
+        rozrad: 'lancuch',
+        egr: true,
+        dpf: false,
+        kat: {
+            pogrz: true,
+            poj: '200-300',
+            przelot: true,
+            podwojny: false
+        }
+}
+
+}
+
+car.silnik.rokProd = 1995
+car.silnik.kat.iloscTi = '1348gr'
+car.silnik.kat['kat-masa-wlasna'] = '2500 gr'
+car.silnik.kat['kat-prepust'] = '200 kg/min'
+
+
+console.log(car);
+// _________________
+// Powtórka OOP
+// const newUser = {
+//     name: "lisa",
+//     age: 23,
+//     userCar: {
+//         marka: "Audi",
+//         model: "A4",
+//         rocznik: "2018",
+//         nr_rej: "DW3XS46"
+//     }
+
+// }
+// console.log(newUser);
 // console.log(newUser.name);
 // console.log(newUser.age);
-
-// console.log(`${newUser.name} jeździ samochodem marki ${newUser.car.brand}, kolor ${newUser.car.color}, która robie`);
-
-// console.log(newUser.car.sound())
-
-// const car = {
-//     marka: 'BMW',
-//     model: '3 seria', 
-//     rok: 1998,
-//     kolor: 'czerwohny',
-//     silnik: {
-//         model: 'n47',
-//         wtrysk: 'pośredni',
-//         zawory: 16,
-//         tloki: 4,
-//         rozrad: 'lancuch',
-//         egr: true,
-//         dpf: false,
-//         kat: {
-//             pogrz: true,
-//             poj: '200-300',
-//             przelot: true,
-//             podwojny: false
-//         }
-// }
-
-// }
+// console.log(newUser.userCar.marka);
+// console.log(newUser.userCar.model);
 
 
-// car.silnik.rokProd = 1995
-// car.silnik.kat.iloscTi = '1348gr'
-// car.silnik.kat['kat-masa-wlasna'] = '2500 gr'
-// car.silnik.kat['kat-prepust'] = '200 kg/min'
-// console.log(car);
-// ___________________
+
+// console.log(`Mam na imię ${newUser.name}, posisadam samochód marki ${newUser.userCar.marka}, o modelu ${newUser.userCar.model} z roczniku ${newUser.userCar.rocznik}. Mój numer rejestracji to ${newUser.userCar.nr_rej}`);
+// __
 // THIS
 // co to jest i po co
 
@@ -645,42 +669,64 @@ console.log("..................it's me, your first site..............");
 // __________________________
 // KLASY
 
-function Person(name, age) {
-    this.name = name
-    this.age = age
-}
+// function Person(name, age) {
+//     this.name = name
+//     this.age = age
+// }
 
-Person.prototype.sayHi = function (){
-    console.log(`cześć, jestem ${this.name}`);
-}
-        Person.prototype.showAge = function () {
-            console.log(`${this.name} dzisiaj ma ${this.age} lat.`);
-        }
+// Person.prototype.sayHi = function (){
+//     console.log(`cześć, jestem ${this.name}`);
+// }
+//         Person.prototype.showAge = function () {
+//             console.log(`${this.name} dzisiaj ma ${this.age} lat.`);
+//         }
 
 
-        const person1 = new Person ('Niko', 23)
-        person1.sayHi()
-        person1.showAge()
+//         const person1 = new Person ('Niko', 23)
+//         person1.sayHi()
+//         person1.showAge()
 
 
 // ===============================
 // Nowy zapis takiego kodu
 
  
-class Person2 {  
-    constructor(name,age) {
-        this.name
-        this.age
-    }
+// class Person2 {  
+//     constructor(name,age) {
+//         this.name
+//         this.age
+//     }
     
-    sayHi(){
-        console.log(`Hej jestem ${this.name}`);
-    }
+//     sayHi(){
+//         console.log(`Hej jestem ${this.name}`);
+//     }
     
-    showAge() {
-        console.log(`${this.name}, ma dzisiaj ${this.age}`);
-    }
-}
+//     showAge() {
+//         console.log(`${this.name}, ma dzisiaj ${this.age}`);
+//     }
+// }
 
-const person2 = new Person2('Nata', 22)
-console.log(person2);
+// const person2 = new Person2('Nata', 22)
+// console.log(person2);
+
+
+// ________________________
+// Klassy replay
+
+// function Person(name, age) {
+//     this.name = name
+//     this.age = age
+// }
+
+// Person.prototype.sayHi = function () {
+// console.log(`Hej mam na imię ${this.name}`);
+// }
+
+// Person.prototype.tellAge = function (){
+//     console.log(`mam ${this.age} lat`);
+// }
+
+// const person2 = new Person ("Niko", 22)
+
+// person2.sayHi()
+// person2.tellAge()
