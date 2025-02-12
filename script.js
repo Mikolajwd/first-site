@@ -785,3 +785,95 @@ console.log("..................it's me, your first site..............");
 
 // person2.sayHi()
 // person2.tellAge()
+
+// __________________________
+//  klassy replay two
+
+
+// function Person (name, age) {
+//     this.name = name
+//     this.age = age
+// }
+
+// Person.prototype.sayHi = function () {
+//     console.log(`Hej jestem ${this.name} !!! `);
+// }
+
+// Person.prototype.ShowAge = function () {
+//     console.log(`mam ${this.age} lat od urodzenia`);
+// }
+
+// const person3 = new Person ("Niko", 23)
+// person3.sayHi()
+// person3.ShowAge()
+
+// _______________________
+// klassy skrócony, nowoczesny zapis
+
+// class PersonEats { 
+//     constructor(name, firstEats, favSecEat, tempEat ){
+//     this.personName = name
+//     this.eat = firstEats
+//     this.eat2 = favSecEat
+//     this.tempEat = tempEat
+//     }
+
+// whatEat(){
+//     console.log(`Your name ${this.personName}, your favorit eat is ${this.eat}, do you have secondary eat?`)
+// }
+
+// chooseEat(){
+//     console.log(`So, ${this.personName0}, do yo like ${this.eat2}? What tamperature do you prafer? Maby ${this.tempEat} `)
+// }
+     
+// }
+
+// const persone4 = new PersonEats('Nata', 'kotlet schabowy', 'frytki', '96 Far' )
+// console.log(persone4);
+
+// persone4.whatEat()
+// persone4.chooseEat()
+
+// ______________________
+// extends & super
+
+ class Animal {
+    constructor (name) {
+        this.name = name
+ }
+
+ sound() {
+    console.log('zwierzak robi hau hau');
+ }
+}
+
+
+class Dog extends Animal {
+constructor (name, age) {
+    super(name)
+    this.age = age
+}
+}
+
+class Cat extends Animal {
+    constructor(name, weight){
+        super(name)
+        this.weight = weight
+    }
+
+    catWeight() {
+        console.log(`to bydle ma w sobie wagę ${this.weight}`);
+    }
+
+    sound() {
+        console.log('a ten zwierzak robi MIIIAAAAU')
+    }
+}
+
+const cat = new Cat ("Mania", 22)
+const dog = new Dog ("Bull", 10)
+
+console.log(dog);
+console.log(cat);
+cat.sound()
+cat.catWeight()
