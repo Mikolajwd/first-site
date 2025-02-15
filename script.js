@@ -880,23 +880,65 @@ console.log("..................it's me, your first site..............");
 // ______________________
 // Destrukturyzacja 
 
-const person ={
-    name: "Lili",
-    age: 22,
-    job: "SMM"
+// const person ={
+//     name: "Lili",
+//     age: 22,
+//     job: "SMM"
+// }
+
+// const showInfo = () => {
+
+// const {job, name, age} = person
+
+// // ten zapis - jest równoważny zapisu poniżej
+
+// // const name = person.name
+// // const age = person.age
+// // const job = person.job
+
+//     console.log(`Hej jestem ${name}, mam ${age} lat od urodzenia, jestem ${job} managerem. `)
+// }
+
+// showInfo()
+// ________________________
+// druga metoda destrukturyzacji
+const pers2 = {
+    name: 'niko',
+    age: 23,
+    role: 'manager',
+    car: {
+        brand: 'BMW',
+        model: 'Seria 1'
+    }
+ } 
+ 
+const showInfo2 = ({})
+
+
+
+
+
+
+
+
+
+
+
+// ________________________
+// trzecia metoda destruktryzacji.
+ const pers3 = {
+    name: 'niko',
+    age: 23,
+    role: 'manager',
+    car: {
+        brand: 'BMW',
+        model: 'Seria 1'
+    }
+ } 
+
+const showInfo3 = () => {
+    const  {name, age, role, car: {brand, model}} = pers3
+    console.log(`hej ${name}, masz ${age}, pracujesz ${role}, jeździsz ${brand} ${model} `);
 }
+showInfo3()
 
-const showInfo = () => {
-
-const {job, name, age} = person
-
-// ten zapis - jest równoważny zapisu poniżej
-
-// const name = person.name
-// const age = person.age
-// const job = person.job
-
-    console.log(`Hej jestem ${name}, mam ${age} lat od urodzenia, jestem ${job} managerem. `)
-}
-
-showInfo()
