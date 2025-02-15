@@ -837,43 +837,66 @@ console.log("..................it's me, your first site..............");
 // ______________________
 // extends & super
 
- class Animal {
-    constructor (name) {
-        this.name = name
- }
+//  class Animal {
+//     constructor (name) {
+//         this.name = name
+//  }
 
- sound() {
-    console.log('zwierzak robi hau hau');
- }
+//  sound() {
+//     console.log('zwierzak robi hau hau');
+//  }
+// }
+
+
+// class Dog extends Animal {
+// constructor (name, age) {
+//     super(name)
+//     this.age = age
+// }
+// }
+
+// class Cat extends Animal {
+//     constructor(name, weight){
+//         super(name)
+//         this.weight = weight
+//     }
+
+//     catWeight() {
+//         console.log(`to bydle ma w sobie wagę ${this.weight}`);
+//     }
+
+//     sound() {
+//         console.log('a ten zwierzak robi MIIIAAAAU')
+//     }
+// }
+
+// const cat = new Cat ("Mania", 22)
+// const dog = new Dog ("Bull", 10)
+
+// console.log(dog);
+// console.log(cat);
+// cat.sound()
+// cat.catWeight()
+// ______________________
+// Destrukturyzacja 
+
+const person ={
+    name: "Lili",
+    age: 22,
+    job: "SMM"
 }
 
+const showInfo = () => {
 
-class Dog extends Animal {
-constructor (name, age) {
-    super(name)
-    this.age = age
-}
-}
+const {job, name, age} = person
 
-class Cat extends Animal {
-    constructor(name, weight){
-        super(name)
-        this.weight = weight
-    }
+// ten zapis - jest równoważny zapisu poniżej
 
-    catWeight() {
-        console.log(`to bydle ma w sobie wagę ${this.weight}`);
-    }
+// const name = person.name
+// const age = person.age
+// const job = person.job
 
-    sound() {
-        console.log('a ten zwierzak robi MIIIAAAAU')
-    }
+    console.log(`Hej jestem ${name}, mam ${age} lat od urodzenia, jestem ${job} managerem. `)
 }
 
-const cat = new Cat ("Mania", 22)
-const dog = new Dog ("Bull", 10)
-
-console.log(dog);
-console.log(cat);
-cat.sound()
-cat.catWeight()
+showInfo()
