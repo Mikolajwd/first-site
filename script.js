@@ -1,5 +1,4 @@
 console.log("..................it's me, your first site..............");
-
 // const num = [1, 2, 4, 6];
 
 // console.log(num);
@@ -37,6 +36,7 @@ console.log("..................it's me, your first site..............");
 
 // const showBigName = name => {
 // 	name.map(name.toUpperCase());
+
 // };
 // names.map(showBigName);
 //  ______________________
@@ -892,53 +892,107 @@ console.log("..................it's me, your first site..............");
 
 // // ten zapis - jest równoważny zapisu poniżej
 
-// // const name = person.name
-// // const age = person.age
-// // const job = person.job
+// // // const name = person.name
+// // // const age = person.age
+// // // const job = person.job
 
-//     console.log(`Hej jestem ${name}, mam ${age} lat od urodzenia, jestem ${job} managerem. `)
+// //     console.log(`Hej jestem ${name}, mam ${age} lat od urodzenia, jestem ${job} managerem. `)
+// // }
+
+// // showInfo()
+// // ________________________
+// // druga metoda destrukturyzacji
+// const pers2 = {
+//     name: 'niko',
+//     age: 23,
+//     role: 'manager',
+//     car: {
+//         brand: 'BMW',
+//         model: 'Seria 1'
+//     }
+//  } 
+ 
+// const showInfo2 = ({})
+
+
+
+
+
+
+
+
+
+
+
+// // ________________________
+// // trzecia metoda destruktryzacji.
+//  const pers3 = {
+//     name: 'niko',
+//     age: 23,
+//     role: 'manager',
+//     car: {
+//         brand: 'BMW',
+//         model: 'Seria 1'
+//     }
+//  } 
+
+// const showInfo3 = () => {
+//     const  {name, age, role, car: {brand, model}} = pers3
+//     console.log(`hej ${name}, masz ${age}, pracujesz ${role}, jeździsz ${brand} ${model} `);
+// }
+// showInfo3()
+
+
+// const car = {
+//     model: "BMW",
+//     color: "Red"
 // }
 
-// showInfo()
-// ________________________
-// druga metoda destrukturyzacji
-const pers2 = {
-    name: 'niko',
-    age: 23,
-    role: 'manager',
-    car: {
-        brand: 'BMW',
-        model: 'Seria 1'
-    }
- } 
- 
-const showInfo2 = ({})
+// const showCar = () => {
+//     console.log(`moje auto to ${car.model}, w kolorze ${car.color}`);
+// }
 
+// showCar()
 
+// drugi
 
+// const car2 = {
+//     marka: "BMW",
+//     model: "seria 1"
+    
+// }
+// console.log(car2)
+//     const carShow = () => {
+//         marka = car2.marka,
+//         model = car2.model
+//         console.log(`druga opcja mojego auta to ${marka}, modeli ${model}`);
+//     }
+//  carShow()
 
+//  trzeci
 
+    
+// const car3 = {
+//     marka: "BMW",
+//     value: 16
+// }
 
+// const showCar3 = () => {
+//     const {marka, value} = car3
+// console.log(`to trzecia opcja, mój samochód to ${marka}, ma zaworów ${value}`);
+// }
 
+// showCar3()
 
-
-
-
-// ________________________
-// trzecia metoda destruktryzacji.
- const pers3 = {
-    name: 'niko',
-    age: 23,
-    role: 'manager',
-    car: {
-        brand: 'BMW',
-        model: 'Seria 1'
-    }
- } 
-
-const showInfo3 = () => {
-    const  {name, age, role, car: {brand, model}} = pers3
-    console.log(`hej ${name}, masz ${age}, pracujesz ${role}, jeździsz ${brand} ${model} `);
+// czwwarta opcja
+const car4 = {
+    marka: "BMW",
+    model: 'e87',
+    color: "Red"
 }
-showInfo3()
 
+const showCar4 = ({marka, model, color}) => {
+    console.log(`hej, mam ${marka}, modelu ${model}, w kolorze ${color}`);
+}
+
+showCar4(car4)
