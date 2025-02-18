@@ -954,7 +954,7 @@ console.log("..................it's me, your first site..............");
 
 // showCar()
 
-// drugi
+// drugi____________________
 
 // const car2 = {
 //     marka: "BMW",
@@ -985,14 +985,14 @@ console.log("..................it's me, your first site..............");
 // showCar3()
 
 // czwwarta opcja
-const car4 = {
-    marka: "BMW",
-    model: 'e87',
-    color: "Red"
-}
+// const car4 = {
+//     marka: "BMW",
+//     model: 'e87',
+//     color: "Red"
+// }
 
-const showCar4 = ({marka, model, color}) => {
-    console.log(`hej, mam ${marka}, modelu ${model}, w kolorze ${color}`);
-}
+// const showCar4 = ({marka, model, color}) => {
+//     console.log(`hej, mam ${marka}, modelu ${model}, w kolorze ${color}`);
+// }
 
-showCar4(car4)
+// showCar4(car4)
